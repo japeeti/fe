@@ -11,16 +11,15 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       background-color: #f4f4f4;
+      color: #333;
     }
     /* Navigation */
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: #333;
+      display: block;
+      background-color: #0099cc;
+      padding: 10px;
     }
     .nav-logo {
       font-size: 24px;
@@ -28,13 +27,18 @@
       text-decoration: none;
     }
     .nav-links {
-      display: flex;
+      display: block;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    .nav-links li {
+      display: inline;
+      margin-right: 10px;
     }
     .nav-link {
       font-size: 18px;
       color: #fff;
       text-decoration: none;
-      margin-left: 20px;
     }
     /* Hero Section */
     .hero {
@@ -48,13 +52,13 @@
     }
     .hero-text {
       font-size: 48px;
-      color: #fff;
+      color: #333;
       text-align: center;
     }
     /* Footer */
     footer {
       padding: 20px;
-      background-color: #333;
+      background-color: #0099cc;
       text-align: center;
     }
     footer p {
@@ -67,14 +71,14 @@
 <body>
 <nav>
   <a href="#" class="nav-logo">Japeeti</a>
-  <div class="nav-links">
-    <a href="#" class="nav-link">Features</a>
-    <a href="#" class="nav-link">Pricing</a>
-    <a href="#" class="nav-link">Documentation</a>
-    <a href="#" class="nav-link">Blog</a>
-    <a href="#" class="nav-link">About</a>
-    <a href="#" class="nav-link">Contact</a>
-  </div>
+  <ul class="nav-links">
+    <li><a href="#" class="nav-link">Features</a></li>
+    <li><a href="#" class="nav-link">Pricing</a></li>
+    <li><a href="#" class="nav-link">Documentation</a></li>
+    <li><a href="#" class="nav-link">Blog</a></li>
+    <li><a href="#" class="nav-link">About</a></li>
+    <li><a href="#" class="nav-link">Contact</a></li>
+  </ul>
 </nav>
 <section class="hero">
   <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
