@@ -51,6 +51,29 @@
       color: #fff;
       text-align: center;
     }
+    /* Waitlist Form */
+    .waitlist-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .waitlist-form input {
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+    .waitlist-form button {
+      font-size: 18px;
+      padding: 10px;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      width: 300px;
+      cursor: pointer;
+    }
     /* Footer */
     footer {
       padding: 20px;
@@ -79,6 +102,13 @@
 <section class="hero">
   <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
 </section>
+<div class="waitlist-form">
+  <form>
+    <input type="email" name="email" placeholder="Email address">
+    <input type="text" name="name" placeholder="Your name">
+    <button type="submit">Join waitlist</button>
+  </form>
+</div>
 <footer>
   <p>&copy; 2023 Japeeti. All rights reserved.</p>
 </footer>
