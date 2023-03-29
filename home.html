@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Japeeti.ai</title>
+  <title>Japeeti.ai</title>
   <style>
     * {
       margin: 0;
@@ -36,26 +36,20 @@
       text-decoration: none;
       margin-left: 20px;
     }
-    /* About Us Section */
-    .about-us {
+    /* Hero Section */
+    .hero {
+      height: 80vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      padding: 40px;
+      background-image: url("background.svg");
+      background-size: cover;
+      background-position: center;
     }
-    .member {
-      margin: 20px;
+    .hero-text {
+      font-size: 48px;
+      color: #fff;
       text-align: center;
-    }
-    .member img {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-    }
-    .member h2 {
-      font-size: 24px;
-      margin-top: 10px;
     }
     /* Footer */
     footer {
@@ -82,23 +76,8 @@
     <a href="#" class="nav-link">Contact</a>
   </div>
 </nav>
-<section class="about-us">
-  <div class="member">
-    <img src="fake_picture1.jpg" alt="Fake Member 1">
-    <h2>Fake Name 1</h2>
-  </div>
-  <div class="member">
-    <img src="fake_picture2.jpg" alt="Fake Member 2">
-    <h2>Fake Name 2</h2>
-  </div>
-  <div class="member">
-    <img src="fake_picture3.jpg" alt="Fake Member 3">
-    <h2>Fake Name 3</h2>
-  </div>
-  <div class="member">
-    <img src="fake_picture4.jpg" alt="Fake Member 4">
-    <h2>Fake Name 4</h2>
-  </div>
+<section class="hero">
+  <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
 </section>
 <footer>
   <p>&copy; 2023 Japeeti. All rights reserved.</p>
