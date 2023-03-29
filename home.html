@@ -62,6 +62,26 @@
       color: #fff;
       margin-bottom: 10px;
     }
+    /* Form */
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -79,6 +99,14 @@
 <section class="hero">
   <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
 </section>
+<div class="form-container">
+  <form>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <textarea placeholder="Message" rows="4" cols="50"></textarea>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
 <footer>
   <p>&copy; 2023 Japeeti. All rights reserved.</p>
 </footer>
