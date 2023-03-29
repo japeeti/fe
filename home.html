@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japeeti.ai</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -11,8 +12,9 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
+      line-height: 1.6;
     }
     /* Navigation */
     nav {
@@ -50,6 +52,8 @@
       font-size: 48px;
       color: #fff;
       text-align: center;
+      max-width: 900px;
+      line-height: 1.5;
     }
     /* Footer */
     footer {
@@ -61,6 +65,16 @@
       font-size: 14px;
       color: #fff;
       margin-bottom: 10px;
+    }
+    footer .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    footer .social-icon {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 5px;
     }
   </style>
 </head>
@@ -80,6 +94,12 @@
   <h1 class="hero-text">Japeeti: your assistant engineer who never sleeps</h1>
 </section>
 <footer>
+  <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+  </div>
   <p>&copy; 2023 Japeeti. All rights reserved.</p>
 </footer>
 </body>
