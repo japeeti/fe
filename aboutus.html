@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <style>
+        #confetti * {
+            position: absolute;
+            z-index: 9999;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <h1>About Us</h1>
@@ -22,5 +29,50 @@
         <h2>Linda Taylor</h2>
         <p>CFO</p>
     </div>
+
+    <div id="confetti"></div>
+
+    <script>
+        particlesJS('confetti', 
+        {
+          "particles": {
+            "number": {
+              "value": 150
+            },
+            "size": {
+              "value": 3
+            },
+            "shape": {
+              "type": "circle"
+            },
+            "opacity": {
+              "value": 0.5
+            },
+            "line_linked": {
+              "enable": false
+            },
+            "move": {
+              "random": true,
+              "speed": 3,
+              "direction": "top",
+              "out_mode": "out"
+            }
+          },
+          "interactivity": {
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              }
+            },
+            "modes": {
+              "repulse": {
+                "distance": 70,
+                "duration": 0.4
+              }
+            }
+          }
+        });
+    </script>
 </body>
 </html>
